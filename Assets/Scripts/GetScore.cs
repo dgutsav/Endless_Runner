@@ -12,7 +12,7 @@ public class GetScore : MonoBehaviour
     }
     void Update(){
         string sc = manager.getScore().ToString();
-        Debug.Log(sc);
+        //Debug.Log(sc);
         //scoreText.text = "OBSTACLES DODGED: "+sc;
         scoreText.text = "OBSTACLES DODGED: "+sc;
     }

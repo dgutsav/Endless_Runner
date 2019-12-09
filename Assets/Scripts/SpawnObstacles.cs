@@ -18,12 +18,14 @@ public class SpawnObstacles : MonoBehaviour
     private void spawnObstacles(){
         float size_x = Random.Range(0.1f,2f);
         float size_y = Random.Range(0.1f,2f);
-        float size_z = Random.Range(0.1f,2f);
-        float pos_y = (size_y/2)+0.5f;
+        float size_z = Random.Range(1f,2f);
+        float pos_y = (size_y/2) + 0.5f;
         float pos_x = Random.Range(-5f,5f);
         Vector3 pos = new Vector3(pos_x,pos_y,render_distance);
+        Debug.Log(pos_y+" "+size_y);
         Vector3 size = new Vector3(size_x,size_y,size_z);  
-        objectPooler.SpawnFromPool("obstacle",pos,size); 
+        objectPooler.SpawnFromPool("obstacle",pos,size);
+         
     }
     IEnumerator spawnRoutine(){
         while(true){

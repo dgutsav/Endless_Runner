@@ -21,7 +21,7 @@ public class Manager : MonoBehaviour
             score++;
     }
     public int getScore(){
-        Debug.Log(score.ToString());
+        //Debug.Log(score.ToString());
         return score;
     }
 }
